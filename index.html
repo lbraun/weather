@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div data-role="page" id="index-page">
+        <div data-role="header">
+            <div data-role="header">
+                <h1>Nearby Weather Stations</h1>
+                <a id="refresh-button" href="#index.html" data-icon="refresh" class="ui-btn-right">Refresh</a>
+            </div>
+        </div>
+
+        <div data-role="content">
+
+            <ul id="station-list" data-role="listview">
+                <!-- List of stations goes here -->
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="station-details-page">
+        <div data-role="header" data-add-back-btn="true">
+            <h1>Station Details</h1>
+        </div>
+
+        <div data-role="content">
+            <img id="station-icon"/>
+            <h4 id="station-name"></h4>
+            <ul data-role="listview" data-inset="true">
+                <li><span id="station-description"></span></li>
+                <li><span id="station-temperature"></span></li>
+                <li><span id="station-humidity"></span></li>
+                <li><span id="station-pressure"></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>
