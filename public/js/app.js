@@ -15,7 +15,7 @@ $(document).on("click", "#refresh-button", function () {
             units = "metric";
             cnt = 30;
 
-            api_url = "http://api.openweathermap.org/data/2.5/find?"
+            api_url = "https://api.openweathermap.org/data/2.5/find?"
                 + "APPID=" + OPEN_WEATHER_KEY
                 + "&lat=" + lat
                 + "&lon=" + lng
@@ -55,7 +55,7 @@ $(document).on('pagebeforeshow', '#index-page', function () {
 
 $(document).on('pagebeforeshow', '#station-details-page', function (e) {
     e.preventDefault();
-    $('#station-icon').attr('src','http://openweathermap.org/img/w/' + CURRENT_STATION.weather[0].icon + '.png');
+    $('#station-icon').attr('src','https://openweathermap.org/img/w/' + CURRENT_STATION.weather[0].icon + '.png');
     $('#station-name').text(CURRENT_STATION.name);
     $('#station-description').text(CURRENT_STATION.weather[0].description);
     $('#station-temp').text('Temperature: ' + CURRENT_STATION.main.temp);
