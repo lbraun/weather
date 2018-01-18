@@ -2,31 +2,31 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.phonegap.example"
-    versionCode = "10"
-    version     = "1.0.0" >
+    versionCode = "1"
+    version     = "0.0.1" >
 
 <!-- versionCode is optional and Android only -->
 
-  <name>My Weather App</name>
+  <name>Weather</name>
 
   <description>
-      An example for phonegap build docs.
+      A simple weather app to demonstrate use of phonegap.
   </description>
 
-  <author href="http://franciscoramos.name">
-      Francisco Ramos
+  <author href="http://github.com/lbraun/">
+      Lucas Braun
   </author>
-    
-    <plugin name="cordova-plugin-statusbar"  />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
-    
-    <preference name="StatusBarStyle" value="lightcontent" />
-    
-    <!-- App requested permission -->
-    <preference name="permissions" value="none"/>
-    
-    <allow-navigation href="*" />
-    <allow-intent href="*" />
-    <access origin="*" />
-    
+
+  <plugin name="cordova-plugin-statusbar"  />
+  <plugin name="cordova-plugin-whitelist" spec="1" />
+
+  <preference name="StatusBarStyle" value="lightcontent" />
+
+  <!-- App requested permission -->
+  <preference name="permissions" value="none"/>
+
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
+  <access origin="*" />
+
 </widget>
